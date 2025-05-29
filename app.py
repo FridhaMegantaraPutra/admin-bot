@@ -62,6 +62,7 @@ except Exception as e:
 st.set_page_config(page_title="Chatbot Admin Pondok", layout="centered")
 st.title("🗣️ ADMIN PPM BATU")
 st.write("admin cerdas ready 24/7 libur hanya mitos anggaran 100% tidak terbuang dan saya suka memberi pelajaran pada santri ")
+st.write("mohon maaf jika data kurang lengkap dikarenakan kurang anggaran dan banyak rahasia disini awoakwokowkaokwoak")
 
 # Inisialisasi riwayat chat
 if "messages" not in st.session_state:
