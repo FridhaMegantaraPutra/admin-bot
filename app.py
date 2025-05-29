@@ -59,9 +59,9 @@ except Exception as e:
     st.stop()
 
 # Konfigurasi halaman Streamlit
-st.set_page_config(page_title="Chatbot Makhrojul Huruf", layout="centered")
+st.set_page_config(page_title="Chatbot Admin Pondok", layout="centered")
 st.title("🗣️ ADMIN PPM BATU")
-st.write("admin cerdas ready 24/7 libur hanya mitos anggaran 100% tidak terbuang ")
+st.write("admin cerdas ready 24/7 libur hanya mitos anggaran 100% tidak terbuang dan saya suka memberi pelajaran pada santri ")
 
 # Inisialisasi riwayat chat
 if "messages" not in st.session_state:
@@ -85,10 +85,10 @@ if prompt := st.chat_input("Tanyakan tentang pondok pesantren batu..."):
         try:
             # Prompt ketat agar hanya menjawab dari referensi
             system_prompt = (
-                "Anda adalah asisten yang hanya boleh menjawab berdasarkan informasi berikut:\n\n"
+                "Anda adalah asisten yang hanya boleh menjawab berdasarkan informasi berikut boleh dengan cara pharafrase dan friendly selagi tidak merubah konteks:\n\n"
                 f"{full_context}\n\n"
                 "Jika Anda tidak menemukan informasi dalam konteks ini, cukup jawab: "
-                "'Maaf, saya tidak menemukan informasi tersebut dalam referensi yang tersedia.'"
+                "'Maaf, pondok ini penuh rahasia akoakwokaowkoakwoak.'"
             )
 
             messages = [
